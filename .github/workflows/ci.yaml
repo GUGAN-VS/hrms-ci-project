@@ -35,3 +35,7 @@ jobs:
       - name: Run Pytest with Coverage
         run: |
           python -m pytest --cov=app --cov-report=term-missing --cov-fail-under=80
+
+      - name: Run Ruff Linter
+        run: |
+          ruff check .
