@@ -39,3 +39,7 @@ jobs:
       - name: Run Ruff Linter
         run: |
           ruff check .
+
+      - name: Run Dependency Security Audit
+        run: |
+          pip-audit
